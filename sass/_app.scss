@@ -18,13 +18,16 @@
         .header-menu__item {
             color: $text;
             text-decoration: none;
-            padding: 1rem;
             border-bottom: 4px solid $pure-white;
-        }
 
-        .header-menu__item:hover {
-            color: $primary;
-            border-bottom: 4px solid $primary;
+            padding: 1rem;
+
+            transition: all .2s;
+
+            &:hover {
+                color: $primary;
+                border-bottom: 4px solid $primary;
+            }
         }
     }
 }
@@ -45,13 +48,16 @@
         .sidebar-item {
             color: $pure-white;
             text-decoration: none;
-            padding: 1rem 2rem;
             border-bottom: 4px solid $pure-white;
-        }
 
-        .sidebar-item:hover {
-            color: $primary;
-            border-bottom: 4px solid $primary;
+            padding: 1rem 2rem;
+
+            transition: all .2s;
+
+            &:hover {
+                color: $primary;
+                border-bottom: 4px solid $primary;
+            }
         }
     }
 
@@ -67,7 +73,13 @@
             display: flex;
             justify-content: center;
 
-            padding-left: 1.5rem;
+            margin-left: 1.5rem;
+
+            transition: all .2s;
+
+            &:hover {
+                box-shadow: 0 0 1rem 0.5rem rgba($text, 0.2);
+            }
         }
         
         .main-cards {
@@ -78,11 +90,41 @@
             .main-cards__card {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 width: 33%;
 
                 text-align: justify;
+                border-radius: 0.5rem;
 
-                padding-left: 1.5rem;
+                margin-left: 1.5rem;
+                padding-bottom: 1rem;
+
+                transition: all .2s;
+
+                &:hover {
+                    box-shadow: 0 0 1rem 0.5rem rgba($text, 0.2);
+                }
+
+                .main-cards__card--text {
+                    padding: 2rem;
+                }
+                .main-cards__card--button {
+                    width: 20%;
+
+                    color: $pure-white;
+                    background-color: $highlight;
+                    border: none;
+                    border-radius: 0.5rem;
+
+                    padding: 1rem;
+
+                    transition: all .2s;
+
+                    &:hover {
+                        background-color: $text;
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
@@ -103,5 +145,11 @@
         border-right: 0.3rem solid $pure-white;
 
         padding: 1rem;
+
+        transition: all .2s;
+
+        &:hover {
+            color: $text;
+        }
     }
 }
