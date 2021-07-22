@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 65.5%;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  color: #283B45;
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-decoration: none;
+  border-bottom: 2px solid #D9D9DA;
+  margin: 1.5rem 5rem;
+}
+.header .header-menu {
+  display: flex;
+  justify-content: space-between;
+  min-width: 30%;
+  text-align: right;
+}
+.header .header-menu .header-menu__item {
+  color: #283B45;
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 4px solid #fff;
+}
+.header .header-menu .header-menu__item:hover {
+  color: #CDB26E;
+  border-bottom: 4px solid #CDB26E;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+.content .sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 30%;
+  background-color: #283B45;
+}
+.content .sidebar .sidebar-item {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-bottom: 4px solid #fff;
+}
+.content .sidebar .sidebar-item:hover {
+  color: #CDB26E;
+  border-bottom: 4px solid #CDB26E;
+}
+.content .main {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  width: 70%;
+  margin-bottom: 5rem;
+}
+.content .main .main-carousell {
+  display: flex;
+  justify-content: center;
+  padding-left: 1.5rem;
+}
+.content .main .main-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.content .main .main-cards .main-cards__card {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  text-align: justify;
+  padding-left: 1.5rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CDB26E;
+  padding: 1.5rem 5rem;
+}
+.footer .footer-menu__item {
+  color: #fff;
+  text-decoration: none;
+  border-right: 0.3rem solid #fff;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=index.css.map */

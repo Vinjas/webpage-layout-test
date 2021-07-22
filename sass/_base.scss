@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 65.5%; //1rem = 10px
+    font-family: $default-font;
+}
+
+body {
+    color: $text;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}

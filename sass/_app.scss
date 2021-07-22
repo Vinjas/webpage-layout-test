@@ -1,0 +1,107 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    text-decoration: none;
+    border-bottom: 2px solid $grey;
+
+    margin: 1.5rem 5rem;
+
+    .header-menu {
+        display: flex;
+        justify-content: space-between;
+        min-width: 30%;
+
+        text-align: right;
+
+        .header-menu__item {
+            color: $text;
+            text-decoration: none;
+            padding: 1rem;
+            border-bottom: 4px solid $pure-white;
+        }
+
+        .header-menu__item:hover {
+            color: $primary;
+            border-bottom: 4px solid $primary;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 5rem;
+
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        min-width: 30%;
+
+        background-color: $text;
+
+        .sidebar-item {
+            color: $pure-white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-bottom: 4px solid $pure-white;
+        }
+
+        .sidebar-item:hover {
+            color: $primary;
+            border-bottom: 4px solid $primary;
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        width: 70%;
+
+        margin-bottom: 5rem;
+
+        .main-carousell {
+            display: flex;
+            justify-content: center;
+
+            padding-left: 1.5rem;
+        }
+        
+        .main-cards {
+            display: flex;
+            justify-content: space-between;
+
+            margin-top: 1.5rem;
+            .main-cards__card {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+
+                text-align: justify;
+
+                padding-left: 1.5rem;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: $primary;
+
+    padding: 1.5rem 5rem;
+
+    .footer-menu__item {
+        color: $pure-white;
+        text-decoration: none;
+        border-right: 0.3rem solid $pure-white;
+
+        padding: 1rem;
+    }
+}
