@@ -77,14 +77,14 @@ img {
   width: 70%;
   margin-bottom: 1.5rem;
 }
-.content .main-carousell {
+.content .main-wrapper {
   display: flex;
   justify-content: center;
   margin-left: 1.5rem;
-  transition: all 0.2s;
+  overflow: hidden;
 }
-.content .main-carousell:hover {
-  box-shadow: 0 0 1rem 0.2rem rgba(40, 59, 69, 0.2);
+.content .main-wrapper * {
+  box-sizing: border-box;
 }
 .content .main .main-cards {
   display: flex;
@@ -154,9 +154,6 @@ img {
     width: 100%;
     flex-direction: row;
   }
-  .content .main .main-cards .main-cards__card img {
-    max-width: 100%;
-  }
 }
 @media only screen and (max-width: 690px) {
   .header {
@@ -172,14 +169,14 @@ img {
     flex-direction: column-reverse;
     margin: 1rem;
   }
-  .content .main-carousell {
-    margin: auto;
-  }
   .content .main {
     width: 100%;
     margin: auto;
   }
-  .content .main .main-cards__card {
+  .content .main-wrapper {
+    margin: auto;
+  }
+  .content .main-cards__card {
     margin: 0 0 1rem 0;
     padding: 0;
   }

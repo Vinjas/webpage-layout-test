@@ -36,13 +36,48 @@
             </div>
     
             <div class="main">
-                <div class="main-carousell">
-                    <img src="./images/carousell1.jpg" alt="carousell1" width="1000"></img>
+                <div class="main-wrapper">
+                    <div class="main-wrapper-carousell">
+                        <img class="main-wrapper-carousell__photo" src="./images/carousell1.jpg" alt="carousell1" width="1000">
+                        <div>Beedroom 1</div>
+                    </div>
+
+                    <div class="main-wrapper-carousell">
+                        <img class="main-wrapper-carousell__photo" src="./images/carousell2.jpg" alt="carousell2" width="1000">
+                        <div>Beedroom 1</div>
+                    </div>
+
+                    <div class="main-wrapper-carousell">
+                        <img class="main-wrapper-carousell__photo" src="./images/carousell3.jpg" alt="carousell3" width="1000">
+                        <div>Beedroom 1</div>
+                    </div>
+
+                    <div class="main-wrapper-carousell">
+                        <img class="main-wrapper-carousell__photo" src="./images/carousell4.jpg" alt="carousell4" width="1000">
+                        <div>Beedroom 1</div>
+                    </div>
+
+                    <div class="main-wrapper-carousell">
+                        <img class="main-wrapper-carousell__photo" src="./images/carousell5.jpg" alt="carousell5" width="1000">
+                        <div>Beedroom 1</div>
+                    </div>
+
+                    <a class="main-wrapper-carousell__button--next" onclick="plusSlides(-1)">&#10094</a>
+                    <a class="main-wrapper-carousell__button--prev" onclick="plusSlides(1)">&#10095</a>
+
+                </div>
+
+                <div class="main-dots" style="text-align:center">
+                    <span class="main-dots__dot" onclick="currentSlide(1)"></span>
+                    <span class="main-dots__dot" onclick="currentSlide(2)"></span>
+                    <span class="main-dots__dot" onclick="currentSlide(3)"></span>
+                    <span class="main-dots__dot" onclick="currentSlide(4)"></span>
+                    <span class="main-dots__dot" onclick="currentSlide(5)"></span>
                 </div>
 
                 <div class="main-cards">
                     <div class="main-cards__card">
-                        <img src="./images/room1.jpg" alt="room1" width="320"></img>
+                        <img src="./images/room1.jpg" alt="room1" width="320">
                         <div class="main-cards__card-content">   
                             <p class="main-cards__card-content--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                             incididunt ut labore et dolore magna aliqua.</p>
@@ -80,6 +115,7 @@
             <img src="./images/dreamroom-logo.png" alt="logo-small"  height="50"></img>
         </footer>
 
+        <script src="./carousell.js"></script>
 
     </body>
 </html>

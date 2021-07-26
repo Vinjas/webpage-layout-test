@@ -70,16 +70,26 @@
 
         margin-bottom: 1.5rem;
 
-        &-carousell {
+        &-wrapper {
             display: flex;
             justify-content: center;
 
             margin-left: 1.5rem;
+            overflow: hidden;
+            // width: 90%;
 
-            transition: all .2s;
+            * {
+                box-sizing: border-box;
+            }
 
-            &:hover {
-                box-shadow: 0 0 1rem 0.2rem rgba($text, 0.2);
+            &-carousell {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;   
+
+                &__photo {
+
+                }
             }
         }
         
@@ -171,9 +181,7 @@
         width: 100%;
         flex-direction: row;
 
-        img {
-            max-width: 100%;
-        }
+
     }
 }
 
@@ -194,15 +202,17 @@
         flex-direction: column-reverse;
         margin: 1rem;
 
-        .main-carousell {
-            margin: auto;
-        }
+
 
         .main {
             width: 100%;
             margin: auto;
 
-            .main-cards__card {
+            &-wrapper {
+                margin: auto;
+            }
+
+            &-cards__card {
                 margin: 0 0 1rem 0;
                 padding: 0;
             }
