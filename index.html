@@ -25,36 +25,87 @@
 
         <div class="content">
             <div class="sidebar">
-                <a class="sidebar-item" href="#">Sidebar Element</a>
-                <a class="sidebar-item" href="#">Sidebar Element</a>
-                <a class="sidebar-item" href="#">Sidebar Element</a>
-                <a class="sidebar-item" href="#">Sidebar Element</a>
-                <a class="sidebar-item" href="#">Sidebar Element</a>
-                <a class="sidebar-item" href="#">Sidebar Element</a>
-                <a class="sidebar-item" href="#">Sidebar Element</a>
-                <a class="sidebar-item" href="#">Sidebar Element</a>
+                <div class="sidebar-dropdown">
+                    <a class="sidebar-dropdown__item" onclick="openDropdown(1)">Sidebar Element</a>
+                    <div id="dropdown1" class="sidebar-dropdown__item--expand">
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-dropdown">
+                    <a class="sidebar-dropdown__item" onclick="openDropdown(2)">Sidebar Element</a>
+                    <div id="dropdown2" class="sidebar-dropdown__item--expand">
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-dropdown">
+                    <a class="sidebar-dropdown__item" onclick="openDropdown(3)">Sidebar Element</a>
+                    <div id="dropdown3" class="sidebar-dropdown__item--expand">
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-dropdown">
+                    <a class="sidebar-dropdown__item" onclick="openDropdown(4)">Sidebar Element</a>
+                    <div id="dropdown4" class="sidebar-dropdown__item--expand">
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-dropdown">
+                    <a class="sidebar-dropdown__item" onclick="openDropdown(5)">Sidebar Element</a>
+                    <div id="dropdown5" class="sidebar-dropdown__item--expand">
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-dropdown">
+                    <a class="sidebar-dropdown__item" onclick="openDropdown(6)">Sidebar Element</a>
+                    <div id="dropdown6" class="sidebar-dropdown__item--expand">
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                    </div>
+                </div>
+
+                <div class="sidebar-dropdown">
+                    <a class="sidebar-dropdown__item" onclick="openDropdown(7)">Sidebar Element</a>
+                    <div id="dropdown7" class="sidebar-dropdown__item--expand">
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                        <a href="#">Sub Element</a>
+                    </div>
+                </div>
             </div>
     
             <div class="main">
                 <div class="main-wrapper">
                     <div class="main-wrapper-carousell">
-                        <img class="main-wrapper-carousell__photo" src="./images/carousell1.jpg" alt="carousell1" width="1500">
+                        <img src="./images/carousell1.jpg" alt="carousell1" width="1500">
                     </div>
 
                     <div class="main-wrapper-carousell">
-                        <img class="main-wrapper-carousell__photo" src="./images/carousell2.jpg" alt="carousell2" width="1500">
+                        <img src="./images/carousell2.jpg" alt="carousell2" width="1500">
                     </div>
 
                     <div class="main-wrapper-carousell">
-                        <img class="main-wrapper-carousell__photo" src="./images/carousell3.jpg" alt="carousell3" width="1500">
+                        <img src="./images/carousell3.jpg" alt="carousell3" width="1500">
                     </div>
 
                     <div class="main-wrapper-carousell">
-                        <img class="main-wrapper-carousell__photo" src="./images/carousell4.jpg" alt="carousell4" width="1500">
+                        <img src="./images/carousell4.jpg" alt="carousell4" width="1500">
                     </div>
 
                     <div class="main-wrapper-carousell">
-                        <img class="main-wrapper-carousell__photo" src="./images/carousell5.jpg" alt="carousell5" width="1500">
+                        <img src="./images/carousell5.jpg" alt="carousell5" width="1500">
                     </div>
 
                     <a class="carousell__button--next" onclick="nextImage(-1)">&#10094</a>
@@ -111,6 +162,7 @@
         </footer>
 
         <script src="./carousell.js"></script>
+        <script src="./dropdown.js"></script>
 
     </body>
 </html>
