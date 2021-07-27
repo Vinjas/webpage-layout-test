@@ -189,6 +189,7 @@ img {
   padding: 2rem;
 }
 .content .main .main-cards__card-content--button {
+  font-family: "Rubik", sans-serif, sans-serif;
   color: #fff;
   background-color: #2D757A;
   border: none;
