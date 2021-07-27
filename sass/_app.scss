@@ -74,21 +74,72 @@
             display: flex;
             justify-content: center;
 
+            //max-width: 1000px;
+            position: relative;
+            //margin: auto;
+
             margin-left: 1.5rem;
-            overflow: hidden;
-            // width: 90%;
 
             * {
                 box-sizing: border-box;
             }
 
             &-carousell {
-                max-width: 1000px;
-                position: relative;
-                margin: auto;   
+                display: none;
 
                 &__photo {
 
+                }
+            }
+            .carousell__button--next, 
+            .carousell__button--prev {
+                position: absolute;
+                bottom: 50%;
+                width: auto;
+                // height: 100%;
+
+                color: $text;
+                background-color: rgba($pure-white, 0.3);            
+                font-weight: 600;
+                font-size: 2rem;
+                user-select: none;
+
+                //margin-top: -2rem;
+                padding: 3rem 1rem;
+
+                cursor: pointer;
+                transition: 0.6s ease;
+
+                &:hover {
+                    background-color: rgba($pure-white, 0.5);            
+                }
+            }
+            
+            .carousell__button--prev {
+                right: 0;
+            }
+            .carousell__button--next {
+                left: 0;
+            }
+        }
+        &-dots {
+            text-align: center;
+
+            &__dot {
+                display: inline-block;
+                height: 1rem;
+                width: 1rem;
+
+                background-color: $grey;
+                border-radius: 50%;
+
+                margin: 0 0.2rem;
+
+                cursor: pointer;
+                transition: background-color 0.6s ease;
+
+                &.active, &:hover {
+                    background-color: $primary;
                 }
             }
         }
@@ -111,6 +162,10 @@
                 padding-bottom: 1rem;
 
                 transition: all .2s;
+
+                img {
+                    width: 100%;
+                }
 
                 &:hover {
                     box-shadow: 0 0 1rem 0.2rem rgba($text, 0.2);
@@ -180,6 +235,11 @@
     .content .main .main-cards .main-cards__card {
         width: 100%;
         flex-direction: row;
+        margin-left: 1.5rem;
+
+        img {
+            width: 50%;
+        }
 
 
     }
@@ -200,9 +260,7 @@
     
     .content {
         flex-direction: column-reverse;
-        margin: 1rem;
-
-
+        margin: auto;
 
         .main {
             width: 100%;
@@ -213,8 +271,12 @@
             }
 
             &-cards__card {
-                margin: 0 0 1rem 0;
+                margin: 0;
                 padding: 0;
+
+                img {
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -242,15 +304,14 @@
         }
     }
     
-    .content {
-        margin: auto;
-        .main .main-cards .main-cards__card {
-            width: 100%;
-            flex-direction: column;
-    
-            img {
-                width: 100%;
-            }
+    .content .main .main-cards .main-cards__card {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+
+        img {
+            max-width: 100%;
         }
     }
+    
 }
