@@ -1,0 +1,23 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: $primary;
+
+    padding: 1.5rem 5rem;
+
+    &-menu__item {
+        color: $pure-white;
+        text-decoration: none;
+        border-right: 0.3rem solid $pure-white;
+
+        padding: 1rem;
+
+        transition: all .2s;
+
+        &:hover {
+            color: $text;
+        }
+    }
+}
